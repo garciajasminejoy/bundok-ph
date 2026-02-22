@@ -1,6 +1,7 @@
 <div class="login-page flex justify-center items-center h-screen">
   <div class="w-lg">
     <p-panel>
+      <h2 class="text-center mb-4 text-primary text-xl">Log In</h2>
       <form #loginForm="ngForm">
         <div>
           <p-inputGroup>
@@ -35,7 +36,7 @@
         </div>
       </form>
       <div class="mt-2 flex justify-end">
-        <p-button label="Submit" [disabled]="!loginForm.valid" />
+        <p-button label="Log In" [disabled]="!loginForm.valid" label="Log In" />
       </div>
     </p-panel>
   </div>

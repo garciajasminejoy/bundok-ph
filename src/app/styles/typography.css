@@ -1,0 +1,7 @@
+.text-primary {
+    color: var(--p-primary-color);
+}
+
+.text-highlight {
+    color: var(--p-pop-color)
+}
