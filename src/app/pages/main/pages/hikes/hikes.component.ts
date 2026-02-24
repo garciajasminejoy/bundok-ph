@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-hikes',
   imports: [],
   templateUrl: './hikes.component.html',
-  styleUrl: './hikes.component.css'
+  styleUrl: './hikes.component.css',
+  standalone: true
 })
 export class HikesComponent {
 
