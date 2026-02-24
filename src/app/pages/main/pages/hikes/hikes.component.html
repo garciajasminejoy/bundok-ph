@@ -1,17 +1,30 @@
 <div class="hikes">
-  <p-select
-    [options]="locations"
-    [(ngModel)]="selectedLocation"
-    optionLabel="name"
-    placeholder="Select a Location"
-    class="w-full md:w-56 mr-4"
-  />
+  <div class="flex justify-between items-center mb-4">
+    <div class="filter-start">
+      <p-select
+        [options]="locations"
+        [(ngModel)]="selectedLocation"
+        optionLabel="name"
+        placeholder="Select a Location"
+        class="w-full md:w-56 mr-4"
+      />
 
-  <p-select
-    [options]="difficultyLevels"
-    [(ngModel)]="selectedDifficulty"
-    optionLabel="name"
-    placeholder="Select a Difficulty Level"
-    class="w-full md:w-56"
-  />
+      <p-select
+        [options]="difficultyLevels"
+        [(ngModel)]="selectedDifficulty"
+        optionLabel="name"
+        placeholder="Select a Difficulty Level"
+        class="w-full md:w-56"
+      />
+    </div>
+    
+    <div class="filter-end">
+      <p-inputgroup>
+        <input pInputText placeholder="Keyword" />
+        <p-inputgroup-addon>
+          <p-button icon="pi pi-search" severity="secondary" variant="text" />
+        </p-inputgroup-addon>
+      </p-inputgroup>
+    </div>
+  </div>
 </div>

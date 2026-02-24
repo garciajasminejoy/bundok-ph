@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { InputTextModule } from 'primeng/inputtext';
 import { SelectModule } from 'primeng/select';
 
 @Component({
   selector: 'app-hikes',
-  imports: [SelectModule, FormsModule],
+  imports: [SelectModule, InputGroupModule, InputGroupAddonModule, InputTextModule, ButtonModule, FormsModule],
   templateUrl: './hikes.component.html',
   styleUrl: './hikes.component.css',
   standalone: true
