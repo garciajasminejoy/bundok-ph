@@ -36,7 +36,7 @@
         </div>
       </form>
       <div class="mt-2 flex justify-end">
-        <p-button label="Log In" [disabled]="!loginForm.valid" label="Log In" />
+        <p-button label="Log In" [disabled]="!loginForm.valid" label="Log In" (click)="login()" />
       </div>
     </p-panel>
   </div>
