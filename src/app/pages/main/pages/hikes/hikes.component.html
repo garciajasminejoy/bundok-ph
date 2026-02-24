@@ -1,0 +1,17 @@
+<div class="hikes">
+  <p-select
+    [options]="locations"
+    [(ngModel)]="selectedLocation"
+    optionLabel="name"
+    placeholder="Select a Location"
+    class="w-full md:w-56 mr-4"
+  />
+
+  <p-select
+    [options]="difficultyLevels"
+    [(ngModel)]="selectedDifficulty"
+    optionLabel="name"
+    placeholder="Select a Difficulty Level"
+    class="w-full md:w-56"
+  />
+</div>
