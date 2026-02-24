@@ -7,6 +7,7 @@ const AppPreset = definePreset(Aura, {
   semantic: {
     primary: {
       200: '#CDD7CE',
+      400: '#547D5B',
       500: '#2c5f34',
       600: '#244c2b',
       700: '#1b3a21',
