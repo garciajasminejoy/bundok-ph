@@ -9,5 +9,9 @@ import { CardModule } from 'primeng/card';
   styleUrl: './hike-card.component.css'
 })
 export class HikeCardComponent {
-  hike = input<any>();
+  hike = input<{
+    name: string;
+    description: string;
+    location: string;
+  }>();
 }
