@@ -5,13 +5,22 @@ import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputTextModule } from 'primeng/inputtext';
 import { SelectModule } from 'primeng/select';
+import { HikeCardComponent } from '../../../../shared/components/hike-card/hike-card.component';
 
 @Component({
   selector: 'app-hikes',
-  imports: [SelectModule, InputGroupModule, InputGroupAddonModule, InputTextModule, ButtonModule, FormsModule],
+  imports: [
+    SelectModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    InputTextModule,
+    ButtonModule,
+    FormsModule,
+    HikeCardComponent,
+  ],
   templateUrl: './hikes.component.html',
   styleUrl: './hikes.component.css',
-  standalone: true
+  standalone: true,
 })
 export class HikesComponent {
   selectedLocation?: string;
@@ -24,9 +33,5 @@ export class HikesComponent {
     { name: 'Mindoro' },
     { name: 'Nueva Vizcaya' },
   ];
-  difficultyLevels = [
-    { name: 'Easy' },
-    { name: 'Moderate' },
-    { name: 'Hard' },
-  ];
+  difficultyLevels = [{ name: 'Easy' }, { name: 'Moderate' }, { name: 'Hard' }];
 }
