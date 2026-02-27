@@ -17,7 +17,7 @@
         class="w-full md:w-56"
       />
     </div>
-    
+
     <div class="filter-end">
       <p-inputgroup>
         <input pInputText placeholder="Keyword" />
@@ -29,6 +29,8 @@
   </div>
 
   <div>
-    <app-hike-card class="mb-4"></app-hike-card>
+    @for (hike of hikes; track hike.name) {
+      <app-hike-card [hike]="hike" class="mb-4"></app-hike-card>
+    }
   </div>
 </div>

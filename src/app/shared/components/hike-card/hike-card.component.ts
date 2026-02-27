@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 
 
@@ -9,5 +9,5 @@ import { CardModule } from 'primeng/card';
   styleUrl: './hike-card.component.css'
 })
 export class HikeCardComponent {
-
+  hike = input<any>();
 }

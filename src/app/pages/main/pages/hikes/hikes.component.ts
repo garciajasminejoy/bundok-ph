@@ -34,4 +34,25 @@ export class HikesComponent {
     { name: 'Nueva Vizcaya' },
   ];
   difficultyLevels = [{ name: 'Easy' }, { name: 'Moderate' }, { name: 'Hard' }];
+
+  hikes = [
+    {
+      name: 'Mount Pulag',
+      location: 'Cordillera',
+      difficulty: 'Moderate',
+      description: 'Mount Pulag is the third highest mountain in the Philippines, known for its stunning sunrise views and sea of clouds.',
+    },
+    {
+      name: 'Mount Maculot',
+      location: 'Batangas',
+      difficulty: 'Hard',
+      description: 'Mount Maculot is a challenging hike in Batangas, known for its rugged terrain and scenic views.',
+    },
+    {
+      name: 'Mount Banahaw',
+      location: 'Rizal',
+      difficulty: 'Easy',
+      description: 'Mount Banahaw is a popular hiking destination in Rizal, known for its beautiful landscapes and spiritual significance.',
+    }
+  ]
 }
