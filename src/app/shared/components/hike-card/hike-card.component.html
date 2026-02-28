@@ -1,5 +1,7 @@
-<p-card [header]="hike()?.name || ''">
-    <p class="m-0">
-        {{ hike()?.description }}
-    </p>
+<p-card>
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="assets/images/sample.jpg" />
+    </ng-template>
+    <ng-template #title>{{ hike()?.name }}</ng-template>
+    <p>{{ hike()?.description }}</p>
 </p-card>
