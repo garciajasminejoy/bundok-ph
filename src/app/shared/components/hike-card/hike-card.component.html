@@ -1,6 +1,19 @@
 <p-card>
   <ng-template #header>
-    <img alt="Card" class="card-header-image" src="assets/images/sample.jpg" />
+    <div class="relative">
+      <img
+        alt="Card"
+        class="card-header-image"
+        src="assets/images/sample.jpg"
+      />
+      @if (hike()?.isSale) {
+        <div
+          class="sale-badge absolute top-3 right-3 bg-highlight text-white text-xs font-bold px-2 py-1 rounded"
+        >
+          Sale
+        </div>
+      }
+    </div>
   </ng-template>
   <ng-template #title>{{ hike()?.name }}</ng-template>
   <div class="grid grid-cols-2 gap-2 py-2">
@@ -21,7 +34,10 @@
     <div class="col-span-1">
       <div class="flex flex-wrap items-center ratings-container">
         @for (rating of starRatings(); track $index) {
-          <i class="pi pi-star-fill text-yellow" [class]="$index !== 0 ? 'ml-1': ''"></i>
+          <i
+            class="pi pi-star-fill text-yellow"
+            [class]="$index !== 0 ? 'ml-1' : ''"
+          ></i>
         }
       </div>
     </div>

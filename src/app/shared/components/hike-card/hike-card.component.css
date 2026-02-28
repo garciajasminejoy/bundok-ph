@@ -7,3 +7,7 @@
 .text-yellow {
     color: var(--p-yellow);
 }
+
+.bg-highlight {
+    background-color: var(--p-pop-color);
+}

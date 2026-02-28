@@ -17,6 +17,7 @@ export class HikeCardComponent {
     date: Date;
     organizer: string;
     ratings: number;
+    isSale: boolean;
   }>();
 
   starRatings = computed(() => {

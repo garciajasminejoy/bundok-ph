@@ -43,7 +43,8 @@ export class HikesComponent {
       description: 'Mount Pulag is the third highest mountain in the Philippines, known for its stunning sunrise views and sea of clouds.',
       date: new Date('2024-07-15'),
       organizer: 'John Doe',
-      ratings: 5
+      ratings: 5,
+      isSale: true,
     },
     {
       name: 'Mount Maculot',
@@ -52,7 +53,8 @@ export class HikesComponent {
       description: 'Mount Maculot is a challenging hike in Batangas, known for its rugged terrain and scenic views.',
       date: new Date('2024-07-15'),
       organizer: 'Jane Doe',
-      ratings: 3
+      ratings: 3,
+      isSale: false,
     },
     {
       name: 'Mount Banahaw',
@@ -61,7 +63,8 @@ export class HikesComponent {
       description: 'Mount Banahaw is a popular hiking destination in Rizal, known for its beautiful landscapes and spiritual significance.',
       date: new Date('2024-07-15'),
       organizer: 'Akyat PH',
-      ratings: 4
+      ratings: 4,
+      isSale: true,
     }
   ]
 }
