@@ -7,6 +7,7 @@
 :root {
   --p-pop-color: #E86C00;
   --p-white: #F5F5F5;
+  --p-yellow: #FFC500;
 }
 
 html {
@@ -17,6 +18,5 @@ html {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-size: 1rem;
-  font-weight: 400;
   font-style: normal;
 }

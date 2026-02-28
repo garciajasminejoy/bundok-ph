@@ -6,11 +6,24 @@
   <div class="grid grid-cols-2 gap-4 py-2">
     <div class="col-span-1 flex items-center">
       <i class="pi pi-map-marker text-highlight"></i>
-      <span class="ml-1">{{ hike()?.location }}</span>
+      <span class="font-semibold ml-2">{{ hike()?.location }}</span>
     </div>
     <div class="col-span-1">
       <i class="pi pi-calendar text-highlight"></i>
-      <span class="ml-1">{{ hike()?.date | date : 'mediumDate' }}</span>
+      <span class="font-semibold ml-2">{{
+        hike()?.date | date: "mediumDate"
+      }}</span>
+    </div>
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-users text-highlight"></i>
+      <span class="font-semibold ml-2">{{ hike()?.organizer }}</span>
+    </div>
+    <div class="col-span-1">
+      <div class="flex flex-wrap items-center ratings-container">
+        @for (rating of starRatings(); track $index) {
+          <i class="pi pi-star-fill text-yellow" [class]="$index !== 0 ? 'ml-1': ''"></i>
+        }
+      </div>
     </div>
   </div>
 </p-card>

@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 
 
@@ -15,5 +15,12 @@ export class HikeCardComponent {
     description: string;
     location: string;
     date: Date;
+    organizer: string;
+    ratings: number;
   }>();
+
+  starRatings = computed(() => {
+    const stars = (this.hike()?.ratings ?? 0);
+    return Array(stars).fill(0);
+  });
 }
