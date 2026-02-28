@@ -6,10 +6,11 @@
 
 :root {
   --p-pop-color: #E86C00;
+  --p-white: #F5F5F5;
 }
 
 html {
-  background-color: #F5F5F5;
+  background-color: var(--p-white);
 }
 
 * {
