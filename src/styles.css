@@ -8,6 +8,10 @@
   --p-pop-color: #E86C00;
 }
 
+html {
+  background-color: #F5F5F5;
+}
+
 * {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
