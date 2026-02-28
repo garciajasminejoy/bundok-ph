@@ -1,11 +1,12 @@
-import { DatePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 
 
 @Component({
   selector: 'app-hike-card',
-  imports: [CardModule, DatePipe],
+  imports: [CardModule, DatePipe, ButtonModule, CurrencyPipe],
   templateUrl: './hike-card.component.html',
   styleUrl: './hike-card.component.css'
 })

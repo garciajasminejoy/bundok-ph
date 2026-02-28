@@ -35,15 +35,17 @@
       <i class="pi pi-users text-highlight"></i>
       <span class="font-semibold ml-2">{{ hike()?.organizer }}</span>
     </div>
-    <div class="col-span-1">
-      <div class="flex flex-wrap items-center ratings-container">
-        @for (rating of starRatings(); track $index) {
-          <i
-            class="pi pi-star-fill text-yellow"
-            [class]="$index !== 0 ? 'ml-1' : ''"
-          ></i>
-        }
-      </div>
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-money-bill text-highlight"></i>
+      <span class="font-semibold ml-2">{{ 1000 | currency }}</span>
     </div>
   </div>
+
+  <ng-template #footer>
+    <div class="flex justify-between items-center mt-1">
+      <div class="w-full">
+        <p-button label="Book" class="card-btn" [fluid]="true" />
+      </div>
+    </div>
+  </ng-template>
 </p-card>

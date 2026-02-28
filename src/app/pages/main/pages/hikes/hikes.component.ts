@@ -16,7 +16,7 @@ import { HikeCardComponent } from '../../../../shared/components/hike-card/hike-
     InputTextModule,
     ButtonModule,
     FormsModule,
-    HikeCardComponent,
+    HikeCardComponent
   ],
   templateUrl: './hikes.component.html',
   styleUrl: './hikes.component.css',
