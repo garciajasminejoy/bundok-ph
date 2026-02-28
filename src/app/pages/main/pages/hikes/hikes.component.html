@@ -1,38 +1,50 @@
 <div class="hikes">
-  <div class="flex justify-between items-center">
-    <div class="filter-start">
-      <p-select
-        [options]="locations"
-        [(ngModel)]="selectedLocation"
-        optionLabel="name"
-        placeholder="Select a Location"
-        class="w-full md:w-56 mr-4"
-      />
-
-      <p-select
-        [options]="difficultyLevels"
-        [(ngModel)]="selectedDifficulty"
-        optionLabel="name"
-        placeholder="Select a Difficulty Level"
-        class="w-full md:w-56"
-      />
-    </div>
-
-    <div class="filter-end">
-      <p-inputgroup>
-        <input pInputText placeholder="Keyword" />
-        <p-inputgroup-addon>
-          <p-button icon="pi pi-search" severity="secondary" variant="text" />
-        </p-inputgroup-addon>
-      </p-inputgroup>
-    </div>
+  <div class="banner">
+    <img
+      src="assets/images/banner.jpg"
+      alt="banner"
+      class="w-full h-64 object-cover mb-6"
+    />
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hikes-container">
-    @for (hike of hikes; track hike.name) {
-      <div class="card">
-        <app-hike-card [hike]="hike" class="mb-4"></app-hike-card>
+  <div class="hikes-page-content">
+    <div class="flex justify-between items-center">
+      <div class="filter-start">
+        <p-select
+          [options]="locations"
+          [(ngModel)]="selectedLocation"
+          optionLabel="name"
+          placeholder="Select a Location"
+          class="w-full md:w-56 mr-4"
+        />
+
+        <p-select
+          [options]="difficultyLevels"
+          [(ngModel)]="selectedDifficulty"
+          optionLabel="name"
+          placeholder="Select a Difficulty Level"
+          class="w-full md:w-56"
+        />
       </div>
-    }
+
+      <div class="filter-end">
+        <p-inputgroup>
+          <input pInputText placeholder="Keyword" />
+          <p-inputgroup-addon>
+            <p-button icon="pi pi-search" severity="secondary" variant="text" />
+          </p-inputgroup-addon>
+        </p-inputgroup>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hikes-container"
+    >
+      @for (hike of hikes; track hike.name) {
+        <div class="card">
+          <app-hike-card [hike]="hike" class="mb-4"></app-hike-card>
+        </div>
+      }
+    </div>
   </div>
 </div>

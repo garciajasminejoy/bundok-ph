@@ -1,7 +1,10 @@
 .hikes {
-    padding: 2rem;
+}
+
+.hikes-page-content {
+  padding: 2rem;
 }
 
 .hikes-container {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
