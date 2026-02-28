@@ -1,22 +1,26 @@
 .navbar {
-    padding: 2rem;
-    background-color: var(--p-primary-200);
+  padding: 2rem;
+  background-color: var(--p-primary-200);
 }
 
 .navbar-center a {
-    color: var(--p-primary-color);
-    padding: 0.5rem 1.5rem;
-    margin: 0 1rem;
-    border-radius: 24px;
+  color: var(--p-primary-color);
+  padding: 0.5rem 1.5rem;
+  margin: 0 1rem;
+  border-radius: 24px;
+  border: 1px solid var(--p-primary-color);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-center a:hover {
-    background-color: var(--p-primary-400);
-    color: var(--p-surface-100);
-    transition: all 0.3s ease;
+  background-color: var(--p-primary-400);
+  color: var(--p-surface-100);
+  transition: all 0.3s ease;
 }
 
 .navbar-center a.nav-active {
-    background-color: var(--p-primary-color);
-    color: var(--p-surface-100);
+  background-color: var(--p-primary-color);
+  color: var(--p-white);
+  padding: 0.5rem 3rem;
+  transition: all 0.5s ease;
 }

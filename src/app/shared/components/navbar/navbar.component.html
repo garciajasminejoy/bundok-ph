@@ -1,25 +1,31 @@
 <div class="navbar flex justify-between">
   <div class="navbar-start">
-    <a class="btn btn-ghost normal-case text-xl"></a>
+    <a class="btn btn-ghost font-semibold text-lg"></a>
   </div>
   <div class="navbar-center">
     <a
-      class="btn btn-ghost normal-case text-xl"
+      class="btn btn-ghost text-lg"
       routerLink="/hikes"
       routerLinkActive="nav-active"
-      >EXPLORE</a
+      #exploreLink="routerLinkActive"
+      [class.font-bold]="exploreLink.isActive"
+      >Explore</a
     >
     <a
-      class="btn btn-ghost normal-case text-xl"
+      class="btn btn-ghost text-lg"
       routerLink="/mountains"
       routerLinkActive="nav-active"
-      >MOUNTAINS</a
+      #mountainsLink="routerLinkActive"
+      [class.font-bold]="mountainsLink.isActive"
+      >Mountains</a
     >
     <a
-      class="btn btn-ghost normal-case text-xl"
+      class="btn btn-ghost text-lg"
       routerLink="/organizers"
       routerLinkActive="nav-active"
-      >ORGANIZERS</a
+      #organizersLink="routerLinkActive"
+      [class.font-bold]="organizersLink.isActive"
+      >Organizers</a
     >
   </div>
   <div class="navbar-end"></div>
