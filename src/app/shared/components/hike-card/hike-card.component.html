@@ -15,7 +15,11 @@
       }
     </div>
   </ng-template>
-  <ng-template #title>{{ hike()?.name }}</ng-template>
+  <ng-template #title
+    ><span class="font-bold text-primary text-xl">{{
+      hike()?.name
+    }}</span></ng-template
+  >
   <div class="grid grid-cols-2 gap-2 py-2">
     <div class="col-span-1 flex items-center">
       <i class="pi pi-map-marker text-highlight"></i>
