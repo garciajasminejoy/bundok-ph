@@ -40,7 +40,7 @@
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hikes-container"
     >
-      @for (hike of hikes; track hike.id) {
+      @for (hike of hikes(); track hike.id) {
         <div class="card">
           <app-hike-card [hike]="hike" class="mb-4"></app-hike-card>
         </div>

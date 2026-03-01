@@ -1,11 +1,14 @@
 <div class="hike-details">
-  <p>hike-details works!</p>
+  <div class="page-heading my-4">
+    <h1 class="text-primary text-3xl font-bold">{{ hike?.name }}</h1>
+    <p>{{ hike?.description }}</p>
+  </div>
 
-  <ul>
-    <li><a routerLink="general">General Details</a></li>
-    <li><a routerLink="trail">Trail Info</a></li>
-    <li><a routerLink="gallery">Gallery</a></li>
-    <li><a routerLink="reviews">Reviews</a></li>
+  <ul class="tabs-container flex gap-4 my-4">
+    <li class="p-4 pl-0"><a routerLink="general" routerLinkActive="nav-active">General Details</a></li>
+    <li class="p-4"><a routerLink="trail" routerLinkActive="nav-active">Trail Info</a></li>
+    <li class="p-4"><a routerLink="gallery" routerLinkActive="nav-active">Gallery</a></li>
+    <li class="p-4"><a routerLink="reviews" routerLinkActive="nav-active">Reviews</a></li>
   </ul>
 
   <router-outlet></router-outlet>
