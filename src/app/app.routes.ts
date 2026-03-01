@@ -4,6 +4,7 @@ import { OrganizersComponent } from './pages/main/pages/organizers/organizers.co
 import { MountainsComponent } from './pages/main/pages/mountains/mountains.component';
 import { MainComponent } from './pages/main/main.component';
 import { HikesComponent } from './pages/main/pages/hikes/hikes.component';
+import { HikeDetailsComponent } from './pages/main/pages/hike-details/hike-details.component';
 
 export const routes: Routes = [
   {
@@ -23,6 +24,10 @@ export const routes: Routes = [
         path: '',
         redirectTo: 'hikes',
         pathMatch: 'full',
+      },
+      {
+        path: 'hikes/:id',
+        component: HikeDetailsComponent,
       },
       {
         path: 'hikes',

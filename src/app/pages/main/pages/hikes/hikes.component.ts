@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { InputGroupModule } from 'primeng/inputgroup';
@@ -37,6 +37,7 @@ export class HikesComponent {
 
   hikes = [
     {
+      id: 1,
       name: 'Mount Pulag',
       location: 'Cordillera',
       difficulty: 'Moderate',
@@ -47,6 +48,7 @@ export class HikesComponent {
       isSale: true,
     },
     {
+      id: 2,
       name: 'Mount Maculot',
       location: 'Batangas',
       difficulty: 'Hard',
@@ -57,6 +59,7 @@ export class HikesComponent {
       isSale: false,
     },
     {
+      id: 3,
       name: 'Mount Banahaw',
       location: 'Rizal',
       difficulty: 'Easy',
@@ -66,5 +69,5 @@ export class HikesComponent {
       ratings: 4,
       isSale: true,
     }
-  ]
+  ];
 }
