@@ -1,14 +1,29 @@
 <div class="hike-details">
   <div class="page-heading my-4">
-    <h1 class="text-primary text-4xl font-bold">{{ hike?.name }}</h1>
+    <h1 class="text-primary text-4xl font-bold flex items-start">
+      <span>{{ hike?.name }}</span>
+      @if (hike?.isSale) {
+        <div class="flex ml-2">
+          <p-tag value="Sale" [style]="{ background: 'var(--p-pop-color)', color: 'var(--p-white)'}" rounded="true"/>
+        </div>
+      }
+    </h1>
     <p>{{ hike?.description }}</p>
   </div>
 
   <ul class="tabs-container flex gap-4 my-4">
-    <li class="p-4 pl-0"><a routerLink="general" routerLinkActive="nav-active">General Details</a></li>
-    <li class="p-4"><a routerLink="trail" routerLinkActive="nav-active">Trail Info</a></li>
-    <li class="p-4"><a routerLink="gallery" routerLinkActive="nav-active">Gallery</a></li>
-    <li class="p-4"><a routerLink="reviews" routerLinkActive="nav-active">Reviews</a></li>
+    <li class="p-4 pl-0">
+      <a routerLink="general" routerLinkActive="nav-active">General Details</a>
+    </li>
+    <li class="p-4">
+      <a routerLink="trail" routerLinkActive="nav-active">Trail Info</a>
+    </li>
+    <li class="p-4">
+      <a routerLink="gallery" routerLinkActive="nav-active">Gallery</a>
+    </li>
+    <li class="p-4">
+      <a routerLink="reviews" routerLinkActive="nav-active">Reviews</a>
+    </li>
   </ul>
 
   <router-outlet></router-outlet>

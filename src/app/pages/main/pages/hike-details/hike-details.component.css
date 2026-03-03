@@ -10,3 +10,7 @@
 .tabs-container li a.nav-active {
   border-bottom: 1px solid var(--p-primary-color);
 }
+
+.bg-highlight {
+    background-color: var(--p-pop-color);
+}

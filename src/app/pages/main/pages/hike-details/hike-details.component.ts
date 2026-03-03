@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute, provideRouter, RouterModule } from '@angular/router';
 import { hikeDetailsRoutes } from './hike-details.routes';
 import { HikesService } from '../../../../services/hikes.service';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-hike-details',
-  imports: [RouterModule],
+  imports: [RouterModule, TagModule],
   templateUrl: './hike-details.component.html',
   styleUrl: './hike-details.component.css',
 })

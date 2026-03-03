@@ -6,7 +6,7 @@ import { TableModule } from 'primeng/table';
 
 @Component({
   selector: 'app-hike-general-details',
-  imports: [PanelModule, TableModule, DatePipe],
+  imports: [PanelModule, TableModule],
   templateUrl: './hike-general-details.component.html',
   styleUrl: './hike-general-details.component.css'
 })
