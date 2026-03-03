@@ -7,10 +7,15 @@
         src="assets/images/sample.jpg"
       />
       @if (hike()?.isSale) {
-        <div
-          class="sale-badge absolute top-3 right-3 bg-highlight text-white text-xs font-bold px-2 py-1 rounded"
-        >
-          Sale
+        <div class="absolute top-3 right-3">
+          <p-tag
+            value="Sale"
+            [style]="{
+              background: 'var(--p-pop-color)',
+              color: 'var(--p-white)',
+            }"
+            rounded="true"
+          />
         </div>
       }
     </div>

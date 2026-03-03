@@ -3,11 +3,12 @@ import { Component, computed, inject, input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { TagModule } from 'primeng/tag';
 
 
 @Component({
   selector: 'app-hike-card',
-  imports: [CardModule, DatePipe, ButtonModule, CurrencyPipe, RouterModule],
+  imports: [CardModule, DatePipe, ButtonModule, CurrencyPipe, RouterModule, TagModule],
   templateUrl: './hike-card.component.html',
   styleUrl: './hike-card.component.css'
 })
