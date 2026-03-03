@@ -1,13 +1,24 @@
 <div class="hike-details">
   <div class="page-heading my-4">
-    <h1 class="text-primary text-4xl font-bold flex items-start">
-      <span>{{ hike?.name }}</span>
-      @if (hike?.isSale) {
-        <div class="flex ml-2">
-          <p-tag value="Sale" [style]="{ background: 'var(--p-pop-color)', color: 'var(--p-white)'}" rounded="true"/>
-        </div>
-      }
-    </h1>
+    <div class="flex justify-between">
+      <h1 class="text-primary text-4xl font-bold flex items-start">
+        <span>{{ hike?.name }}</span>
+        @if (hike?.isSale) {
+          <div class="flex ml-2">
+            <p-tag
+              value="Sale"
+              [style]="{
+                background: 'var(--p-pop-color)',
+                color: 'var(--p-white)',
+              }"
+              rounded="true"
+            />
+          </div>
+        }
+      </h1>
+      <p-button label="Book for $100" class="card-btn" />
+    </div>
+
     <p>{{ hike?.description }}</p>
   </div>
 
