@@ -1,0 +1,7 @@
+table tr td {
+    padding: .5rem;
+}
+
+table tr td:first-child {
+    width: 200px;
+}
