@@ -1,0 +1,40 @@
+<p-card (click)="viewDetails()">
+  <ng-template #header>
+    <div class="relative">
+      <img
+        alt="Card"
+        class="card-header-image"
+        src="assets/images/sample.jpg"
+      />
+    </div>
+  </ng-template>
+  <ng-template #title
+    >Testing 132</ng-template
+  >
+  <div class="grid grid-cols-2 gap-2 py-2">
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-map-marker text-highlight"></i>
+      <span class="font-semibold ml-2">test</span>
+    </div>
+    <div class="col-span-1">
+      <i class="pi pi-calendar text-highlight"></i>
+      <span class="font-semibold ml-2">test</span>
+    </div>
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-users text-highlight"></i>
+      <span class="font-semibold ml-2">test</span>
+    </div>
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-money-bill text-highlight"></i>
+      <span class="font-semibold ml-2">test</span>
+    </div>
+  </div>
+
+  <ng-template #footer>
+    <div class="flex justify-between items-center mt-1">
+      <div class="w-full">
+        <p-button label="Book" class="card-btn" [fluid]="true" />
+      </div>
+    </div>
+  </ng-template>
+</p-card>
