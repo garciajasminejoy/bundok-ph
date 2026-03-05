@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
+import { Mountain } from '../../../core/interfaces/mountain.interface';
 
 @Component({
   selector: 'app-mountain-card',
@@ -10,7 +11,7 @@ import { TagModule } from 'primeng/tag';
   styleUrl: './mountain-card.component.css'
 })
 export class MountainCardComponent {
-
+  mountain = input<Mountain>();
 
   viewDetails(): void {}
 }

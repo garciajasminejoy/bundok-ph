@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MountainCardComponent } from '../../../../shared/components/mountain-card/mountain-card.component';
+import { MountainsService } from '../../../../services/mountains/mountains.service';
 
 @Component({
   selector: 'app-mountains',
@@ -9,5 +10,7 @@ import { MountainCardComponent } from '../../../../shared/components/mountain-ca
   standalone: true
 })
 export class MountainsComponent {
+  mountainsService = inject(MountainsService);
 
+  mountainsSignal = this.mountainsService.getAllMountainsSignal();
 }

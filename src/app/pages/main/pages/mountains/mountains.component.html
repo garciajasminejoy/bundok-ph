@@ -1,6 +1,7 @@
 <div class="mountains">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <app-mountain-card></app-mountain-card>
-    <app-mountain-card></app-mountain-card>
+    @for (mountain of mountainsSignal(); track mountain.id) {
+      <app-mountain-card [mountain]="mountain"></app-mountain-card>
+    }
   </div>
 </div>
