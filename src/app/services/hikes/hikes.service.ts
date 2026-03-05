@@ -7,7 +7,7 @@ export class HikesService {
   hikes = signal([
     {
       id: 1,
-      name: 'Mount Pulag',
+      name: 'Mount Pulag Dayhike with John Doe',
       location: 'Cordillera',
       difficulty: 'Moderate',
       description:
@@ -19,7 +19,7 @@ export class HikesService {
     },
     {
       id: 2,
-      name: 'Mount Maculot',
+      name: 'Community Hike: Mount Maculot',
       location: 'Batangas',
       difficulty: 'Hard',
       description:
@@ -31,7 +31,7 @@ export class HikesService {
     },
     {
       id: 3,
-      name: 'Mount Banahaw',
+      name: 'Mount Banahaw: Hike for a Cause',
       location: 'Rizal',
       difficulty: 'Easy',
       description:
