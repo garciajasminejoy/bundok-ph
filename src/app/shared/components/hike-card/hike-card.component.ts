@@ -4,6 +4,7 @@ import { Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
+import { Hike } from '../../../core/interfaces/hike.interface';
 
 
 @Component({
@@ -13,16 +14,7 @@ import { TagModule } from 'primeng/tag';
   styleUrl: './hike-card.component.css'
 })
 export class HikeCardComponent {
-  hike = input<{
-    id: number;
-    name: string;
-    description: string;
-    location: string;
-    date: Date;
-    organizer: string;
-    ratings: number;
-    isSale: boolean;
-  }>();
+  hike = input<Hike>();
 
   starRatings = computed(() => {
     const stars = (this.hike()?.ratings ?? 0);

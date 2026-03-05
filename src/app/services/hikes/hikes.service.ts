@@ -1,10 +1,11 @@
 import { Injectable, signal } from '@angular/core';
+import { Hike } from '../../core/interfaces/hike.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HikesService {
-  hikes = signal([
+  hikes = signal<Hike[]>([
     {
       id: 1,
       name: 'Mount Pulag Dayhike with John Doe',
