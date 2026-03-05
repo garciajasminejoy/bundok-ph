@@ -6,7 +6,7 @@ import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputTextModule } from 'primeng/inputtext';
 import { SelectModule } from 'primeng/select';
 import { HikeCardComponent } from '../../../../shared/components/hike-card/hike-card.component';
-import { HikesService } from '../../../../services/hikes.service';
+import { HikesService } from '../../../../services/hikes/hikes.service';
 
 @Component({
   selector: 'app-hikes',
