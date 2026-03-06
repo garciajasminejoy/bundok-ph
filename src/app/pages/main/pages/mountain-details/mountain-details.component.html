@@ -1,11 +1,13 @@
 <div class="mountain-details">
-  <div class="page-heading my-4">
-    <div class="flex justify-between">
-      <h1 class="text-primary text-4xl font-bold flex items-start">
+  <div class="banner">
+    <div class="flex justify-center h-full items-center flex-col">
+      <h1 class="text-primary text-4xl font-bold flex items-center">
         <span>{{ mountain?.name }}</span>
       </h1>
+      <h5 class="text-primary text-xl font-semibold">{{ mountain?.elevationGain }} MASL</h5>
     </div>
-
+  </div>
+  <div class="page-content">
     <p class="my-2">{{ mountain?.description }}</p>
   </div>
 </div>
