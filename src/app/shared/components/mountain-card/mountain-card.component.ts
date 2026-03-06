@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
 import { Mountain } from '../../../core/interfaces/mountain.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mountain-card',
@@ -13,5 +14,9 @@ import { Mountain } from '../../../core/interfaces/mountain.interface';
 export class MountainCardComponent {
   mountain = input<Mountain>();
 
-  viewDetails(): void {}
+  router = inject(Router);
+
+  toMountainDetailPage(): void {
+    this.router.navigate(['/mountains', this.mountain()?.id]);
+  }
 }

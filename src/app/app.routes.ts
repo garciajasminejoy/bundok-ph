@@ -9,6 +9,7 @@ import { HikeGeneralDetailsComponent } from './pages/main/pages/hike-details/tab
 import { HikeTrailInfoComponent } from './pages/main/pages/hike-details/tabs/hike-trail-info/hike-trail-info.component';
 import { HikeGalleryComponent } from './pages/main/pages/hike-details/tabs/hike-gallery/hike-gallery.component';
 import { HikeReviewsComponent } from './pages/main/pages/hike-details/tabs/hike-reviews/hike-reviews.component';
+import { MountainDetailsComponent } from './pages/main/pages/mountain-details/mountain-details.component';
 
 export const routes: Routes = [
   {
@@ -59,6 +60,10 @@ export const routes: Routes = [
       {
         path: 'hikes',
         component: HikesComponent,
+      },
+      {
+        path: 'mountains/:id',
+        component: MountainDetailsComponent,
       },
       {
         path: 'mountains',
