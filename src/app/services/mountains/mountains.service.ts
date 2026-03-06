@@ -13,6 +13,7 @@ export class MountainsService {
       difficulty: 'Hard',
       distance: '8.5 km',
       elevationGain: 2500,
+      description: 'Mount Pulag is the third highest mountain in the Philippines, known for its stunning sunrise views and sea of clouds. It is a popular destination for hikers and nature lovers, offering a unique experience with its diverse flora and fauna.',
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export class MountainsService {
       difficulty: 'Moderate',
       distance: '5 km',
       elevationGain: 800,
+      description: 'Mount Batulao is a popular hiking destination in Batangas, known for its scenic trails and panoramic views. The hike offers a mix of grassy slopes and rocky paths, making it suitable for both beginners and experienced hikers.',
     },
   ]);
 
