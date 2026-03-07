@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MountainCardComponent } from './mountain-card.component';
+import { TrailCardComponent } from './trail-card.component';
 
 describe('MountainCardComponent', () => {
-  let component: MountainCardComponent;
-  let fixture: ComponentFixture<MountainCardComponent>;
+  let component: TrailCardComponent;
+  let fixture: ComponentFixture<TrailCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MountainCardComponent]
+      imports: [TrailCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MountainCardComponent);
+    fixture = TestBed.createComponent(TrailCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

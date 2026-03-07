@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { MountainCardComponent } from '../../../../shared/components/mountain-card/mountain-card.component';
+import { TrailCardComponent } from '../../../../shared/components/trail-card/trail-card.component';
 import { MountainsService } from '../../../../services/mountains/mountains.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-mountains',
-  imports: [MountainCardComponent],
+  selector: 'app-trails',
+  imports: [TrailCardComponent],
   templateUrl: './mountains.component.html',
   styleUrl: './mountains.component.css',
   standalone: true

@@ -6,17 +6,17 @@ import { Mountain } from '../../../core/interfaces/mountain.interface';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-mountain-card',
+  selector: 'app-trail-card',
   imports: [CardModule, TagModule, ButtonModule],
-  templateUrl: './mountain-card.component.html',
-  styleUrl: './mountain-card.component.css'
+  templateUrl: './trail-card.component.html',
+  styleUrl: './trail-card.component.css'
 })
-export class MountainCardComponent {
-  mountain = input<Mountain>();
+export class TrailCardComponent {
+  trail = input<Mountain>();
 
   router = inject(Router);
 
-  toMountainDetailPage(): void {
-    this.router.navigate(['/mountains', this.mountain()?.id]);
+  toTrailDetailPage(): void {
+    this.router.navigate(['/trails', this.trail()?.id]);
   }
 }

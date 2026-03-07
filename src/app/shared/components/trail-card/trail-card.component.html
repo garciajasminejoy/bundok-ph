@@ -1,4 +1,4 @@
-<p-card (click)="toMountainDetailPage()" class="cursor-pointer">
+<p-card (click)="toTrailDetailPage()" class="cursor-pointer">
   <ng-template #header>
     <div class="relative">
       <img
@@ -9,33 +9,33 @@
     </div>
   </ng-template>
   <ng-template #title
-    ><span class="font-bold text-primary text-xl">{{ mountain()?.name }}</span>
+    ><span class="font-bold text-primary text-xl">{{ trail()?.name }}</span>
   </ng-template>
   <div class="grid grid-cols-2 gap-2 py-2">
     <div class="col-span-1 flex items-center">
       <i class="pi pi-map-marker text-highlight"></i>
-      <span class="font-semibold ml-2">{{ mountain()?.location }}</span>
+      <span class="font-semibold ml-2">{{ trail()?.location }}</span>
     </div>
     <div class="col-span-1">
       <i class="pi pi-arrow-up-right text-highlight"></i>
       <span class="font-semibold ml-2"
-        >{{ mountain()?.elevation }} MASL</span
+        >{{ trail()?.elevation }} MASL</span
       >
     </div>
     <div class="col-span-1">
       <i class="pi pi-compass text-highlight"></i>
-      <span class="font-semibold ml-2">{{ mountain()?.distance }}</span>
+      <span class="font-semibold ml-2">{{ trail()?.distance }}</span>
     </div>
     <div class="col-span-1">
       <i class="pi pi-trophy text-highlight"></i>
-      <span class="font-semibold ml-2">{{ mountain()?.difficulty }}</span>
+      <span class="font-semibold ml-2">{{ trail()?.difficulty }}</span>
     </div>
   </div>
 
   <ng-template #footer>
     <div class="flex justify-between items-center mt-1">
       <div class="w-full">
-        <p-button label="View Details" class="card-btn" [fluid]="true" (onClick)="toMountainDetailPage()"/>
+        <p-button label="View Details" class="card-btn" [fluid]="true" (onClick)="toTrailDetailPage()"/>
       </div>
     </div>
   </ng-template>
