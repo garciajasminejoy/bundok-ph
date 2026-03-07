@@ -1,4 +1,4 @@
-export interface Mountain {
+export interface Trail {
     id: number;
     name: string;
     location: string;

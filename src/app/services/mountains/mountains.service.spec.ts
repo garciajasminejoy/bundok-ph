@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MountainsService } from './mountains.service';
+import { TrailsService } from './mountains.service';
 
 describe('MountainsService', () => {
-  let service: MountainsService;
+  let service: TrailsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MountainsService);
+    service = TestBed.inject(TrailsService);
   });
 
   it('should be created', () => {

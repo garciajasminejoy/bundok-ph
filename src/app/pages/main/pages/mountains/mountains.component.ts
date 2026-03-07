@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TrailCardComponent } from '../../../../shared/components/trail-card/trail-card.component';
-import { MountainsService } from '../../../../services/mountains/mountains.service';
+import { TrailsService } from '../../../../services/mountains/mountains.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   standalone: true
 })
 export class TrailsComponent {
-  mountainsService = inject(MountainsService);
+  mountainsService = inject(TrailsService);
 
-  mountainsSignal = this.mountainsService.getAllMountainsSignal();
+  mountainsSignal = this.mountainsService.getAllTrailsSignal();
 }

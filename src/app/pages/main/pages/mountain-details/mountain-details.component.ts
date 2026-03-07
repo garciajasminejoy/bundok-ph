@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { MountainsService } from '../../../../services/mountains/mountains.service';
+import { TrailsService } from '../../../../services/mountains/mountains.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
@@ -9,11 +9,11 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
   styleUrl: './mountain-details.component.css',
 })
 export class TrailDetailsComponent implements OnInit {
-  moutainsService = inject(MountainsService);
+  moutainsService = inject(TrailsService);
 
   activatedRoute = inject(ActivatedRoute);
 
-  mountain = this.moutainsService.getMountainById(
+  mountain = this.moutainsService.getTrailById(
     Number(this.activatedRoute.snapshot.params['id']),
   );
 

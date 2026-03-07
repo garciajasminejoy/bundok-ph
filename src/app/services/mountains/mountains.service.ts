@@ -1,11 +1,11 @@
 import { Injectable, signal } from '@angular/core';
-import { Mountain } from '../../core/interfaces/mountain.interface';
+import { Trail } from '../../core/interfaces/mountain.interface';
 
 @Injectable({
   providedIn: 'root',
 })
-export class MountainsService {
-  private hikes = signal<Mountain[]>([
+export class TrailsService {
+  private trails = signal<Trail[]>([
     {
       id: 1,
       name: 'Mount Pulag',
@@ -32,15 +32,15 @@ export class MountainsService {
 
   constructor() {}
 
-  getMountainById(id: number) {
-    return this.hikes().find((hike) => hike.id === id);
+  getTrailById(id: number) {
+    return this.trails().find((trail) => trail.id === id);
   }
 
-  getAllMountains() {
-    return this.hikes();
+  getAllTrails() {
+    return this.trails();
   }
 
-  getAllMountainsSignal() {
-    return this.hikes.asReadonly();
+  getAllTrailsSignal() {
+    return this.trails.asReadonly();
   }
 }
