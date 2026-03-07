@@ -18,3 +18,7 @@
   z-index: -1;
   filter: brightness(0.7);
 }
+
+.description {
+  padding: 0 8rem;
+}
