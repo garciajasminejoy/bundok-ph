@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { TrailsService } from '../../../../services/mountains/mountains.service';
+import { TrailsService } from '../../../../services/trails/trails.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({

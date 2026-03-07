@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { OrganizersComponent } from './pages/main/pages/organizers/organizers.component';
-import { TrailsComponent } from './pages/main/pages/mountains/mountains.component';
+import { TrailsComponent } from './pages/main/pages/trails/trails.component';
 import { MainComponent } from './pages/main/main.component';
 import { HikesComponent } from './pages/main/pages/hikes/hikes.component';
 import { HikeDetailsComponent } from './pages/main/pages/hike-details/hike-details.component';

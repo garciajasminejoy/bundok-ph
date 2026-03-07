@@ -1,6 +1,6 @@
-<div class="mountains">
+<div class="trails">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    @for (trail of mountainsSignal(); track trail.id) {
+    @for (trail of trailsSignal(); track trail.id) {
       <app-trail-card [trail]="trail"></app-trail-card>
     }
   </div>
