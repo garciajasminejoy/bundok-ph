@@ -8,8 +8,8 @@ export class TrailsService {
   private trails = signal<Trail[]>([
     {
       id: 1,
-      name: 'Mount Pulag',
-      location: 'Cordillera',
+      name: 'Mount Pulag via Ambangeg Trail',
+      location: 'Benguet',
       difficulty: '3/9',
       distance: '8.5 km',
       elevation: 2500,
