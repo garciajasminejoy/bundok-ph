@@ -1,14 +1,4 @@
 .page-content {
-  padding: 2rem;
-
-  background: radial-gradient(
-    circle at center,
-    #f2f4f2 0%,
-    #e6ebe7 35%,
-    #d6ded8 60%,
-    #c7d2cb 80%,
-    var(--p-primary-200) 100%
-  );
 }
 
 .banner {
@@ -30,4 +20,19 @@
 
 .description {
   padding: 0 8rem;
+}
+
+.space-above {
+  padding: 2rem 0;
+}
+
+.bg-gradient {
+  background: radial-gradient(
+    circle at center,
+    #f2f4f2 0%,
+    #e6ebe7 35%,
+    #d6ded8 60%,
+    #c7d2cb 80%,
+    var(--p-primary-200) 100%
+  );
 }
