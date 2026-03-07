@@ -10,7 +10,45 @@
   </div>
   <div class="page-content">
     <div class="flex justify-center">
-      <p class="description my-2 text-center text-primary text-lg">{{ mountain?.description }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia beatae vel tempora delectus adipisci eos ex perspiciatis, neque qui. Vero reiciendis, fugit blanditiis adipisci nemo voluptatibus accusamus culpa facere!</p>
+      <p class="description my-2 text-center text-primary text-lg">
+        {{ mountain?.description }} Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ad officia beatae vel tempora delectus adipisci eos ex
+        perspiciatis, neque qui. Vero reiciendis, fugit blanditiis adipisci nemo
+        voluptatibus accusamus culpa facere!
+      </p>
+    </div>
+
+    <div class="flex justify-center my-4">
+      <div
+        class="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[32px] text-center"
+      >
+        <div class="flex flex-col gap-2">
+          <label>Location</label>
+          <p class="text-xl font-bold text-black">{{ mountain?.location }}</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label>Difficulty</label>
+          <p class="text-xl font-bold text-black">{{ mountain?.difficulty }}</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label>Elevation Gain</label>
+          <p class="text-xl font-bold text-black">
+            {{ mountain?.elevationGain }} MASL
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label>Duration</label>
+          <p class="text-xl font-bold text-black">{{ mountain?.duration }}</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label>Trail Class</label>
+          <p class="text-xl font-bold text-black">{{ mountain?.trailClass }}</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label>Distance</label>
+          <p class="text-xl font-bold text-black">{{ mountain?.distance }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

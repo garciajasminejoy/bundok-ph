@@ -6,4 +6,6 @@ export interface Mountain {
     distance: string;
     elevationGain: number;
     description?: string;
+    duration: string;
+    trailClass: string;
 }
