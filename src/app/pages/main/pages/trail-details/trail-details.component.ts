@@ -3,10 +3,10 @@ import { TrailsService } from '../../../../services/mountains/mountains.service'
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-mountain-details',
+  selector: 'app-trail-details',
   imports: [RouterModule],
-  templateUrl: './mountain-details.component.html',
-  styleUrl: './mountain-details.component.css',
+  templateUrl: './trail-details.component.html',
+  styleUrl: './trail-details.component.css',
 })
 export class TrailDetailsComponent implements OnInit {
   moutainsService = inject(TrailsService);

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TrailDetailsComponent } from './mountain-details.component';
+import { TrailDetailsComponent } from './trail-details.component';
 
 describe('MountainDetailsComponent', () => {
   let component: TrailDetailsComponent;

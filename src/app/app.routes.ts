@@ -9,7 +9,7 @@ import { HikeGeneralDetailsComponent } from './pages/main/pages/hike-details/tab
 import { HikeTrailInfoComponent } from './pages/main/pages/hike-details/tabs/hike-trail-info/hike-trail-info.component';
 import { HikeGalleryComponent } from './pages/main/pages/hike-details/tabs/hike-gallery/hike-gallery.component';
 import { HikeReviewsComponent } from './pages/main/pages/hike-details/tabs/hike-reviews/hike-reviews.component';
-import { TrailDetailsComponent } from './pages/main/pages/mountain-details/mountain-details.component';
+import { TrailDetailsComponent } from './pages/main/pages/trail-details/trail-details.component';
 
 export const routes: Routes = [
   {
