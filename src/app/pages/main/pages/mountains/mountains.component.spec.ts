@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MountainsComponent } from './mountains.component';
+import { TrailsComponent } from './mountains.component';
 
 describe('MountainsComponent', () => {
-  let component: MountainsComponent;
-  let fixture: ComponentFixture<MountainsComponent>;
+  let component: TrailsComponent;
+  let fixture: ComponentFixture<TrailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MountainsComponent]
+      imports: [TrailsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MountainsComponent);
+    fixture = TestBed.createComponent(TrailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

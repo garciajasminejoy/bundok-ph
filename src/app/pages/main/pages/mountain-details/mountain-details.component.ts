@@ -8,7 +8,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
   templateUrl: './mountain-details.component.html',
   styleUrl: './mountain-details.component.css',
 })
-export class MountainDetailsComponent implements OnInit {
+export class TrailDetailsComponent implements OnInit {
   moutainsService = inject(MountainsService);
 
   activatedRoute = inject(ActivatedRoute);

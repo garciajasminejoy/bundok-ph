@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './mountains.component.css',
   standalone: true
 })
-export class MountainsComponent {
+export class TrailsComponent {
   mountainsService = inject(MountainsService);
 
   mountainsSignal = this.mountainsService.getAllMountainsSignal();
