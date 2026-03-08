@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TrailsService } from '../../../../services/trails/trails.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { TestimonialCardComponent } from '../../../../shared/components/testimonial-card/testimonial-card.component';
 
 @Component({
   selector: 'app-trail-details',
-  imports: [RouterModule],
+  imports: [RouterModule, TestimonialCardComponent],
   templateUrl: './trail-details.component.html',
   styleUrl: './trail-details.component.css',
 })

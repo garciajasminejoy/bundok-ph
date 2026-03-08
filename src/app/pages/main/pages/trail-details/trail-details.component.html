@@ -10,7 +10,7 @@
   </div>
   <div class="page-content">
     <section class="bg-gradient">
-      <div class="flex justify-center space-above">
+      <div class="flex justify-center space-x">
         <p class="description my-2 text-center text-primary text-lg">
           {{ mountain?.description }} Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Ad officia beatae vel tempora delectus adipisci eos
@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div class="flex justify-center space-above">
+      <div class="flex justify-center space-x">
         <div
           class="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[5rem] gap-y-[3rem] text-center"
         >
@@ -58,14 +58,18 @@
     </section>
 
     <section class="bg-white">
-      <div class="space-above">
+      <div class="space-x">
         <h4 class="text-center text-2xl text-primary font-bold">Gallery</h4>
       </div>
     </section>
 
     <section class="bg-gradient">
-      <div class="space-above">
+      <div class="space-x">
         <h4 class="text-center text-2xl text-primary font-bold">Community</h4>
+
+        <div class="testimonials-container">
+          <app-testimonial-card></app-testimonial-card>
+        </div>
       </div>
     </section>
   </div>
