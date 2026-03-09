@@ -3,16 +3,16 @@
     <div class="banner-image"></div>
     <div class="flex justify-center h-full items-center flex-col">
       <h1 class="text-4xl font-bold flex items-center">
-        <span>{{ mountain?.name }}</span>
+        <span>{{ trail?.name }}</span>
       </h1>
-      <h5 class="text-xl font-semibold">{{ mountain?.elevation }} MASL</h5>
+      <h5 class="text-xl font-semibold">{{ trail?.elevation }} MASL</h5>
     </div>
   </div>
   <div class="page-content">
     <section class="bg-gradient">
       <div class="flex justify-center space-x">
         <p class="description my-2 text-center text-primary text-lg">
-          {{ mountain?.description }} Lorem ipsum dolor sit amet consectetur
+          {{ trail?.description }} Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Ad officia beatae vel tempora delectus adipisci eos
           ex perspiciatis, neque qui. Vero reiciendis, fugit blanditiis adipisci
           nemo voluptatibus accusamus culpa facere!
@@ -25,33 +25,33 @@
         >
           <div class="flex flex-col gap-2">
             <label class="text-primary">Location</label>
-            <p class="text-xl font-bold text-black">{{ mountain?.location }}</p>
+            <p class="text-xl font-bold text-black">{{ trail?.location }}</p>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-primary">Difficulty</label>
             <p class="text-xl font-bold text-black">
-              {{ mountain?.difficulty }}
+              {{ trail?.difficulty }}
             </p>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-primary">Elevation</label>
             <p class="text-xl font-bold text-black">
-              {{ mountain?.elevation }} MASL
+              {{ trail?.elevation }} MASL
             </p>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-primary">Duration</label>
-            <p class="text-xl font-bold text-black">{{ mountain?.duration }}</p>
+            <p class="text-xl font-bold text-black">{{ trail?.duration }}</p>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-primary">Trail Class</label>
             <p class="text-xl font-bold text-black">
-              {{ mountain?.trailClass }}
+              {{ trail?.trailClass }}
             </p>
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-primary">Distance</label>
-            <p class="text-xl font-bold text-black">{{ mountain?.distance }}</p>
+            <p class="text-xl font-bold text-black">{{ trail?.distance }}</p>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
         <div class="flex justify-center mt-[2rem] mx-[4rem]">
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-[2rem] gap-y-[2rem] text-center w-[80%]"
-          > 
+          >
             <app-testimonial-card></app-testimonial-card>
             <app-testimonial-card></app-testimonial-card>
             <app-testimonial-card></app-testimonial-card>
@@ -79,5 +79,20 @@
         </div>
       </div>
     </section>
+
+    <section class="bg-white">
+      <div class="space-x">
+        <h4 class="text-center text-2xl text-primary font-bold">Join a Hike</h4>
+        <div class="flex justify-center mt-[2rem] mx-[4rem]">
+            @for (hike of hikes; track hike.id) {
+              <div class="card">
+                <app-hike-card [hike]="hike" class="mb-4"></app-hike-card>
+              </div>
+            } @empty {
+              <p class="text-center text-gray-500">No hikes available at the moment.</p>
+            }
+        </div>
+      </div>
+    </section> 
   </div>
 </div>
