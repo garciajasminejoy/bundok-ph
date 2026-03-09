@@ -9,6 +9,7 @@ export class HikesService {
     {
       id: 1,
       name: 'Mount Pulag Dayhike with John Doe',
+      trailId: 1,
       location: 'Cordillera',
       difficulty: 'Moderate',
       description:
@@ -20,6 +21,7 @@ export class HikesService {
     },
     {
       id: 2,
+      trailId: 5,
       name: 'Community Hike: Mount Maculot',
       location: 'Batangas',
       difficulty: 'Hard',
@@ -32,6 +34,7 @@ export class HikesService {
     },
     {
       id: 3,
+      trailId: 5,
       name: 'Mount Banahaw: Hike for a Cause',
       location: 'Rizal',
       difficulty: 'Easy',
