@@ -10,4 +10,8 @@ export class OrganizersService {
   private organizers = signal<Organizer[]>(ORGANIZERS);
 
   constructor() { }
+
+  getAllOrganizers(): Organizer[] {
+    return this.organizers();
+  }
 }

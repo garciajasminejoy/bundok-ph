@@ -1,1 +1,39 @@
-<p>organizer-card works!</p>
+<p-card>
+  <ng-template #header>
+    <div class="relative">
+      <img
+        alt="Card"
+        class="card-header-image"
+        src="assets/images/sample.jpg"
+      />
+    </div>
+  </ng-template>
+  <ng-template #title
+    ><span class="font-bold text-primary text-xl">{{
+      organizer()?.name
+    }}</span></ng-template
+  >
+  <div class="grid grid-cols-1 gap-2 py-2">
+    <div class="col-span-1 flex items-center">
+      <i class="pi pi-map-marker text-highlight"></i>
+      <span class="font-semibold ml-2">{{ organizer()?.location }}</span>
+    </div>
+    <div class="col-span-1">
+      <i class="pi pi-at text-highlight"></i>
+      <span class="font-semibold ml-2">{{ organizer()?.email }}</span>
+    </div>
+  </div>
+
+  <ng-template #footer>
+    <div class="flex justify-between items-center mt-1">
+      <div class="w-full">
+        <p-button
+          label="View Organizer"
+          class="card-btn"
+          [fluid]="true"
+          (click)="viewOrganizer()"
+        />
+      </div>
+    </div>
+  </ng-template>
+</p-card>

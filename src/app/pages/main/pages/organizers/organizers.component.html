@@ -20,5 +20,18 @@
         </p-inputgroup>
       </div>
     </div>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[3rem]"
+    >
+      @for (organizer of organizers; track organizer.id) {
+        <div class="card">
+          <app-organizer-card
+            [organizer]="organizer"
+            class="mb-4"
+          ></app-organizer-card>
+        </div>
+      }
+    </div>
   </div>
 </div>

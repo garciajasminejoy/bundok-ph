@@ -1,6 +1,7 @@
 export interface Organizer {
     id: number;
     name: string;
-    contactInfo: string;
+    email: string;
     description?: string;
+    location: string;
 }
