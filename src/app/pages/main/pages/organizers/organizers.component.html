@@ -1,1 +1,24 @@
-<p>organizers works!</p>
+<div class="organizers">
+  <div class="page-content">
+    <div class="flex justify-between items-center">
+      <div class="filter-start">
+        <p-select
+          [options]="locations"
+          [(ngModel)]="selectedLocation"
+          optionLabel="name"
+          placeholder="Select a Location"
+          class="w-full md:w-56 mr-4"
+        />
+      </div>
+
+      <div class="filter-end">
+        <p-inputgroup>
+          <input pInputText placeholder="Keyword" />
+          <p-inputgroup-addon>
+            <p-button icon="pi pi-search" severity="secondary" variant="text" />
+          </p-inputgroup-addon>
+        </p-inputgroup>
+      </div>
+    </div>
+  </div>
+</div>
