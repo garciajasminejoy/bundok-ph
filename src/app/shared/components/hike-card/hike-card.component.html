@@ -49,7 +49,12 @@
   <ng-template #footer>
     <div class="flex justify-between items-center mt-1">
       <div class="w-full">
-        <p-button label="Book" class="card-btn" [fluid]="true" />
+        <p-button
+          label="Book"
+          class="card-btn"
+          [fluid]="true"
+          (click)="bookHike()"
+        />
       </div>
     </div>
   </ng-template>

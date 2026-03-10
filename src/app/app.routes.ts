@@ -10,6 +10,7 @@ import { HikeTrailInfoComponent } from './pages/main/pages/hike-details/tabs/hik
 import { HikeGalleryComponent } from './pages/main/pages/hike-details/tabs/hike-gallery/hike-gallery.component';
 import { HikeReviewsComponent } from './pages/main/pages/hike-details/tabs/hike-reviews/hike-reviews.component';
 import { TrailDetailsComponent } from './pages/main/pages/trail-details/trail-details.component';
+import { BookingComponent } from './pages/main/pages/booking/booking.component';
 
 export const routes: Routes = [
   {
@@ -41,21 +42,25 @@ export const routes: Routes = [
           },
           {
             path: 'general',
-            component: HikeGeneralDetailsComponent
+            component: HikeGeneralDetailsComponent,
           },
           {
             path: 'trail',
-            component: HikeTrailInfoComponent
+            component: HikeTrailInfoComponent,
           },
           {
             path: 'gallery',
-            component: HikeGalleryComponent
+            component: HikeGalleryComponent,
           },
           {
             path: 'reviews',
-            component: HikeReviewsComponent
-          }
-        ]
+            component: HikeReviewsComponent,
+          },
+        ],
+      },
+      {
+        path: 'hikes/:hikeId/book',
+        component: BookingComponent,
       },
       {
         path: 'hikes',
