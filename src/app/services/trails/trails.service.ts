@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { Trail } from '../../core/interfaces/mountain.interface';
+import { Trail } from '../../core/interfaces/trail.interface';
 import { TRAILS } from './trails.data';
 
 @Injectable({

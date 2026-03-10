@@ -2,7 +2,7 @@ import { Component, inject, input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
-import { Trail } from '../../../core/interfaces/mountain.interface';
+import { Trail } from '../../../core/interfaces/trail.interface';
 import { Router } from '@angular/router';
 
 @Component({
