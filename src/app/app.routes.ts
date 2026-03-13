@@ -11,6 +11,7 @@ import { HikeGalleryComponent } from './pages/main/pages/hike-details/tabs/hike-
 import { HikeReviewsComponent } from './pages/main/pages/hike-details/tabs/hike-reviews/hike-reviews.component';
 import { TrailDetailsComponent } from './pages/main/pages/trail-details/trail-details.component';
 import { BookingComponent } from './pages/main/pages/booking/booking.component';
+import { OrganizerDetailsComponent } from './pages/main/pages/organizer-details/organizer-details.component';
 
 export const routes: Routes = [
   {
@@ -73,6 +74,10 @@ export const routes: Routes = [
       {
         path: 'trails',
         component: TrailsComponent,
+      },
+      {
+        path: 'organizers/:id',
+        component: OrganizerDetailsComponent,
       },
       {
         path: 'organizers',
